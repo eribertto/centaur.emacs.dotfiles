@@ -14,10 +14,12 @@
 	diff = auto
 	interactive = auto
 	status = auto
-[pull]
-	rebase = false
 [push]
 	default = current
+	autoSetupRemote = true
+	followTags = true
+[pull]
+	rebase = true
 [delta]
 	navigate = true
 	line-numbers = true
@@ -28,6 +30,17 @@
 [merge]
 	tool = ediff
 	conflictstyle = diff3
+[init]
+	defaultBranch = main
+[rebase]
+	autoSquash = true
+	autoStash = true
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+[help]
+	autoCorrect = 10
 [difftool "ediff"]
 	cmd = emacsclient -n -a \"\" --eval \"(ediff-files \\\"$LOCAL\\\" \\\"$REMOTE\\\")\"
 [mergetool "ediff"]
