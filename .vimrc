@@ -1,5 +1,5 @@
-" new vimrc in Alpine distrobox and Fedora 40
-" Wed Jul 24, 2024 13:44
+" new vimrc in Fedora 40
+" Tue Sep 24, 2024 17:57
 
 if empty(glob('~/.vim/autoload/plug.vim'))
 	  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
